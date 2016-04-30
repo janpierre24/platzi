@@ -1,0 +1,36 @@
+CLONAR UN REPOSIRIO DE GITHUB A MI DISCO DURO
+git clone https://github.com/Mejorandola/Mejorando.la.git
+
+CONFIGURAR GIT EN LAS VARIABLES GLOBALES
+git config --global user.name "Janpierre"
+git config --global user.email "janpierre24.jap@gmail.com"
+
+CREAR CLAVE SSH
+ssh-keygen
+
+COPIAR LA CARPETA CREADA EN JAN (.SSH) A LA CARPETA PLATZI Y EJECUTAR
+cat ~/ .ssh/id_rsa.pub
+
+COPIAR LA CLAVE Y EN GITHUB IR A SETTING>SSH AND GPG KEYS>NEW SSH KEY Y PEGAR LA CLAVE
+
+INICIAMOS UN NUEVO REPOSITORIO DENTRO DE LA CARPETA PLATZI
+git-init
+
+CREAMOS UN ARCHIVO
+touch bloc.txt
+
+AGREGAMOS A GIT
+git add bloc.txt
+
+VERIFICAR ESTADO 
+git-status
+
+AGREGANDO MI PRIMER COMMIT
+git commit -m "este es el primer archivo desde mi computadora"
+
+CONECTANDO MI REPOSITORIO LOCAL CON MI REPOSITORIO EN GITHUB
+git remote add origin git@github.com:janpierre24/platzi.git
+
+ENVIAR TODO MI REPOSITIO LOCAL A GITHUB
+git push origin master
+
